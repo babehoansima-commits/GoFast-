@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFast - Shopping Rapide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête fixe -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">GoFast</span>
+            </a>
+            <div class="cart-icon-container">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">GOFAST</h1>
+            <p class="hero-subtitle">Votre shopping rapide et efficace</p>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Navigation Rapide -->
+    <section class="quick-nav" id="quickNav">
+        <div class="container">
+            <h2 class="section-title">Navigation Rapide</h2>
+            <div class="nav-buttons">
+                <a href="#top-products" class="nav-btn">
+                    <i class="fas fa-fire"></i>
+                    <span>Produits Populaires</span>
+                </a>
+                <a href="#categories" class="nav-btn">
+                    <i class="fas fa-th-large"></i>
+                    <span>Toutes les Catégories</span>
+                </a>
+                <a href="#about" class="nav-btn">
+                    <i class="fas fa-info-circle"></i>
+                    <span>À Propos</span>
+                </a>
+                <a href="#contact" class="nav-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Produits -->
+    <section class="section top-products" id="top-products">
+        <div class="container">
+            <h2 class="section-title">Top 8 - Les Plus Vendus</h2>
+            <div class="products-grid" id="topProductsGrid">
+                <div class="loading">Chargement...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="section categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Toute la Boutique</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="habits">
+                    <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                    <h3 class="category-title">Habits</h3>
+                </div>
+                <div class="category-card" data-category="chaussures">
+                    <div class="category-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <h3 class="category-title">Chaussures</h3>
+                </div>
+                <div class="category-card" data-category="sacs">
+                    <div class="category-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3 class="category-title">Sacs</h3>
+                </div>
+                <div class="category-card" data-category="electronique">
+                    <div class="category-icon"><i class="fas fa-laptop"></i></div>
+                    <h3 class="category-title">Électronique</h3>
+                </div>
+                <div class="category-card" data-category="cosmetiques">
+                    <div class="category-icon"><i class="fas fa-spa"></i></div>
+                    <h3 class="category-title">Cosmétiques</h3>
+                </div>
+                <div class="category-card" data-category="autres">
+                    <div class="category-icon"><i class="fas fa-ellipsis-h"></i></div>
+                    <h3 class="category-title">Autres</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tous les Produits -->
+    <section class="section all-products" id="all-products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Tous les Produits</h2>
+                <button class="filter-reset" id="resetFilter">Voir tout</button>
+            </div>
+            <div class="filter-info" id="filterInfo"></div>
+            <div class="products-grid" id="allProductsGrid">
+                <div class="loading">Chargement...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="about-section">
+                    <h3>À Propos de GoFast</h3>
+                    <p>GoFast est un service d’importation spécialisé qui permet de faire venir des produits et articles directement de la Chine vers la République Démocratique du Congo, et ce, dans plusieurs provinces. Ce service facilite l’achat en gros, souvent par lots de 10, 20, 50 pièces, ou plus, pour répondre aux besoins des revendeurs et des particuliers souhaitant bénéficier de prix avantageux.
+
+La particularité de GoFast, c’est sa rapidité et sa sécurité : toutes les commandes sont soigneusement suivies pour garantir la livraison dans les meilleures conditions, avec un suivi transparent et sécurisé. Grâce à GoFast, vous avez accès à un large catalogue de produits importés à prix compétitifs, tout en bénéficiant d’un service fiable et adapté au marché local.
+
+Sur notre site, vous pouvez facilement commander les articles souhaités via WhatsApp, ce qui vous permet d’avoir un contact direct et rapide avec nous pour toutes vos demandes.
+</p>
+                </div>
+                <div class="contact-section" id="contact">
+                    <h3>Contactez-nous</h3>
+                    <div class="contact-icons">
+                        <a href="https://wa.me/243970332222" class="contact-icon" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:contact@gofast.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://instagram.com/gofast.logistics" class="contact-icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="contact-note">Commandez directement via WhatsApp</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> 2025 GoFast. babehoansima@gmail.com Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Panier -->
+    <div class="modal-overlay" id="cartModalOverlay">
+        <div class="modal" id="cartModal">
+            <div class="modal-header">
+                <h3>Votre Panier</h3>
+                <button class="modal-close" id="closeCartModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart" id="emptyCartMessage">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Votre panier est vide</p>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span class="total-price" id="cartTotal">0.00</span> <span>$</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="whatsapp-order-btn" id="whatsappOrderBtn">
+                    <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMPORT DES SCRIPTS -->
+    <script src="produits.js"></script>  <!-- TU MODIFIES ICI -->
+    <script src="script.js"></script>    <!-- NE PAS MODIFIER -->
+
+</body>
+</html>
